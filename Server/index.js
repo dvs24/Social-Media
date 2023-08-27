@@ -1,4 +1,4 @@
-import express from 'express';
+import express from "express"
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import dotenv from 'dotenv';
@@ -19,15 +19,9 @@ app.use('/images', express.static("images"))
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 
-app.use(cors(
-//     {
-//     origin : ["https://social-media-client-kohl.vercel.app"],
-//     methods : ["POST", "GET", "DELETE", "PUT"],
-//     credentials : true
-// }
-));
+app.use(cors());
 
-dotenv.config({});
+dotenv.config();
 
 mongoose.connect( process.env.MONGO_DB, {useNewUrlParser : true, useUnifiedTopology: true }
 )
