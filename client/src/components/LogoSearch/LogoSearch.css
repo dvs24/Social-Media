@@ -1,0 +1,35 @@
+.logoSearch{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+    background-color:var(--inputColor) 
+    /* justify-content: space-between; */
+}
+
+.search input{
+    border: none;
+    border-radius: 7px;
+    background-color: transparent;
+    padding: 13px;
+    outline: none;
+    
+}
+
+.search img{
+    width: 25px;
+    height: 25px;
+    position: inherit;
+    background: none;
+}
+
+.search img:hover{
+    cursor: pointer;
+}

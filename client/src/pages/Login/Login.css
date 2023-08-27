@@ -1,0 +1,109 @@
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.loginLeft {
+
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.loginLeft img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.loginInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.loginInfo h1 {
+    font-size: 3rem;
+    background-color: red;
+    background-image: var(--buttonBg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.loginInfo h6 {
+    font-size: 0.85rem;
+}
+
+.loginRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    width: 35%;
+}
+
+.loginRight h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.loginForm {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.loginPass{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.loginPass input{
+    /* margin: 10px 10px; */
+    padding: 18px;
+    border: none;
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    outline: none;
+    width: auto;
+    margin:10px 10px;
+
+}
+
+
+.loginBtn{
+    margin: 25px 0px;
+}
+
+.loginBtn button{
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: none;
+    background: var(--buttonBg);
+    color: white;
+    margin-left: 10px;
+}
+
+.loginBtn button:hover{
+    cursor: pointer;
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+

@@ -1,0 +1,129 @@
+.auth{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    gap: 2rem;
+    
+}
+
+.authLeft{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+
+.authLeft img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.authInfo{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.authInfo h1{
+    font-size: 3rem;
+    background-color: red;
+    background-image: var(--buttonBg);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color : transparent;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.authInfo h6{
+    font-size: 0.85rem;
+}
+
+.authRight{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cardColor);
+    border-radius: 10px;
+    width:35%;
+}
+
+.authRight h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.infoForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.namePass{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.namePass input{
+    width: 35%;
+    /* margin: 10px 10px; */
+    padding: 18px;
+    border: none;
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    outline: none;
+    width: 40%;
+    margin:10px 10px;
+
+}
+
+.userName{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.userName input{
+    margin: 10px 10px;
+    padding: 18px;
+    border: none;
+    background-color: var(--inputColor);
+    border-radius: 10px;
+    outline: none;
+    width: 100%;
+}
+
+.formBtn{
+    margin: 25px 0px;
+}
+
+.formBtn button{
+    font-weight: bold;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: none;
+    background: var(--buttonBg);
+    color: white;
+    margin-left: 10px;
+}
+
+.formBtn button:hover{
+    cursor: pointer;
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}

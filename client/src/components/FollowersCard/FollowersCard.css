@@ -1,0 +1,49 @@
+.followersCard{
+    width: 100%;
+    border-radius: 0.7rem;    
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 13px;
+}
+
+.followersInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.followersInfo img{
+    width: 3.2rem;
+    height: 3.2rem;
+    border-radius: 50%;
+}
+
+.followersInfo img:hover{
+    cursor: pointer;
+}
+
+
+
+.followerName{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.followBtn{
+    border-radius: 10px;
+    border: none;
+    padding: 8px 15px;
+    background: var(--buttonBg);
+    color: white;
+}
+
+.followBtn:hover{
+    cursor: pointer;
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+

@@ -1,0 +1,33 @@
+.postInfo{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cardColor) ;
+    gap: 1rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.postImg{
+    border-radius: 10px;
+}
+
+.postIcons 
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;    
+}
+
+.shareIcon{
+    width: 24px;
+    height: 24px;
+}
+
+.postIcons img{
+    cursor: pointer;    
+}
+
+.postDesc{
+    padding-bottom: 10px;
+}

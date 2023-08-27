@@ -1,0 +1,64 @@
+.infoCard{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: var(--cardColor);
+    border-radius: 1rem;
+    width: 100%;
+    margin-top: 20px;
+    
+}
+
+.infoHead{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.infoHead img{
+    width: 24px;
+    height: 24px;
+}
+
+.infoHead img:hover{
+    cursor: pointer;
+}
+
+.info{
+    padding: 5px 20px;
+}
+
+.profileBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.profileBtn button{
+
+    width: 40%;
+    font-weight: bold;
+    padding: 10px 5px ;
+    border-radius: 10px;
+    border: none;
+    background: var(--buttonBg);
+    color: white;
+}
+
+.profileBtn button:hover{
+    cursor: pointer;
+    color: var(--orange);
+    background: transparent;
+    border: 2px solid var(--orange);
+}
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+.rightSideIcons{
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+
+.rightSideIcons img{
+    width: 24px;
+    height: 24px;
+    
+}
+
+.rightSideIcons img:hover{
+    cursor: pointer;
+
+}

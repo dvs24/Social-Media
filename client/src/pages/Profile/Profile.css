@@ -1,0 +1,15 @@
+.Profile{
+    position: relative;
+    display: grid;
+    grid-template-columns: 18% 55% 25% ;
+    gap: 1rem;
+    
+}
+
+.profileCentre{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 35px;
+}
+
