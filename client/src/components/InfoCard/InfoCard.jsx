@@ -20,19 +20,22 @@ const InfoCard = () => {
 
     const handleLogOut = () => {
         dispatch(logOut())
+        localStorage.clear();
     }
 
     useEffect(() => {
         const fetchProfileUser = async () => {
             if (profileUserId === user._id) {
+                console.log(user);
                 setProfileUser(user);
             }
             else {
                 const profileUser = await userApi.getUser(profileUserId);
                 setProfileUser(profileUser);
+
             }
-            fetchProfileUser()
         }
+        fetchProfileUser()
     }, [user, profileUserId])
 
 
@@ -50,7 +53,7 @@ const InfoCard = () => {
             </div>
 
             <div className="info">
-                <span><b>Status In </b></span>
+                <span><b>Status</b></span>
                 <span> {profileUser.relationship}</span></div>
             <div className="info">
                 <span><b>Lives in </b></span>

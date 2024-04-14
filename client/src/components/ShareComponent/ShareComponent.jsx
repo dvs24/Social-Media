@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './ShareComponent.css'
 import profile from '../../img/img4.jpg'
 import photos from '../../img/photos.png'
@@ -21,7 +21,15 @@ const ShareComponent = () => {
     const onImageChange = (event) =>{
         if(event.target.files && event.target.files[0]){
             let img = event.target.files[0];
-            setimage(img)
+            if(img){
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    const result = e.target.result;
+                    setimage(result)
+                }
+                reader.readAsDataURL(img);
+            }
+            
         }
     }
 
@@ -42,7 +50,7 @@ const ShareComponent = () => {
             const fileName = Date.now() + image.name
             data.append('name', fileName)
             data.append('file', image)
-            newPost.image = fileName
+            newPost.image = image;
             try { 
                await dispatch(uploadImage(data));
                dispatch(uploadPost(newPost))
@@ -57,6 +65,10 @@ const ShareComponent = () => {
             reset();
         }
     }
+
+    useEffect(() => {
+        console.log(image)
+    },[image])
 
 
   return (
@@ -93,7 +105,7 @@ const ShareComponent = () => {
         {image && (
                 <div className="previewImage">
                     <img src={close} className='closeImage' alt="" onClick={()=> setimage(null)}/>
-                    <img src={URL.createObjectURL(image)} className='photoImage' alt="" />
+                    <img src={image} className='photoImage' alt="" />
                 </div>
 
             )}

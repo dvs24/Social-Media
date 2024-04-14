@@ -10,6 +10,7 @@ const Post = () => {
   const dispatch = useDispatch();
   const user = useSelector((state)=> state.authReducer.authdata.user);
   const {posts, loading} = useSelector((state)=>state.postReducer)
+  console.log(posts);
 
   if(!posts) return 'No Posts'
   if(params.id) posts.filter((post)=>post.userId === params.id)

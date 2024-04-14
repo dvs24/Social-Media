@@ -6,7 +6,9 @@ import { useSelector } from 'react-redux';
 import Home from './pages/Home/Home'
 import Profile from './pages/Profile/Profile';
 function App() {
-  const {user} = useSelector((state)=>state.authReducer.authdata)
+  const {user} = useSelector((state)=>state.authReducer.authdata);
+  // let user;
+  
 
   return (
     <>
@@ -15,7 +17,7 @@ function App() {
         <div className="blurRight"></div>
         <Routes>
           <Route path='/' element={user ? <Navigate to='home' /> : <Navigate to='auth' />} />
-          <Route path='/auth' element={user? <Navigate to ='/home'/> : <Login/>} />
+          <Route path='/auth' element={user ? <Navigate to ='/home'/> : <Login/>} />
           <Route path='/home' element={user?<Home/> : <Navigate to ='/auth'/> }/>
           <Route path ='profile/:id' element={user? <Profile/>: <Navigate to='/auth'/>}/>
         </Routes>

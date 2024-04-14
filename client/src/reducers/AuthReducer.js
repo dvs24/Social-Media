@@ -8,6 +8,7 @@ export const authReducer = (state = { authdata: {}, loading: false, error: false
     case "AUTH_SUCCESS":
       try {
         const serializedData = JSON.stringify(action.data);
+        
         localStorage.setItem('profile', serializedData);
       } catch (error) {
         console.error("Error serializing data:", error);
