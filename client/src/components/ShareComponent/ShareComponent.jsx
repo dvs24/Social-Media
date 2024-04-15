@@ -66,10 +66,7 @@ const ShareComponent = () => {
         }
     }
 
-    useEffect(() => {
-        console.log(image)
-    },[image])
-
+   
 
   return (
     <div className='shareComponent'>

@@ -34,7 +34,12 @@ const Login = () => {
           duration: 4000,
           position: "top-right",
         })
-      } 
+      } else {
+        toast.success("Email or password is wrong" , {
+          duration: 4000,
+          position: "top-right",
+        })
+      }
     });
   };
 
